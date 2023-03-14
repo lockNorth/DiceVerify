@@ -75,19 +75,16 @@ public class JsonController {
                 ReportForRedBlueSicboDice reportForRedBlueSicboDice = (ReportForRedBlueSicboDice) report;
                 reportForRedBlueSicboDiceMapper.add(reportForRedBlueSicboDice);
 //                System.out.println(reportForRedBlueSicboDice);
-
                 break;
             case "SicboDice":
                 ReportForSicboDice reportForSicboDice = (ReportForSicboDice) report;
                 reportForSicboDiceMapper.add(reportForSicboDice);
 //                System.out.println(reportForSicboDice);
-
                 break;
             case "ThaiFishPrawnCrab":
                 ReportForThaiFishPrawnCrab reportForThaiFishPrawnCrab = (ReportForThaiFishPrawnCrab) report;
                 reportForThaiFishPrawnCrabMapper.add(reportForThaiFishPrawnCrab);
 //                System.out.println(reportForThaiFishPrawnCrab);
-
                 break;
         }
     }

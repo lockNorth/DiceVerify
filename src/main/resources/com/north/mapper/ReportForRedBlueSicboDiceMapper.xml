@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.north.mapper.ReportForRedBlueSicboDiceMapper">
+    <insert id="add">
+        insert into reportForRedBlueSicboDice
+        (start_date,end_date,redPointsPValue,redPoint_1,redPoint_2,redPoint_3,redPoint_4,redPoint_5,redPoint_6,redBigSmallPValue,redBig,redSmall,bluePointsPValue,bluePoint_1,bluePoint_2,bluePoint_3,bluePoint_4,bluePoint_5,bluePoint_6,blueBigSmallPValue,blueBig,blueSmall,DiceName,SourceID,RESULTS)
+        values (
+        #{start_date},#{end_date},#{redPointsPValue},#{redPoint_1},#{redPoint_2},#{redPoint_3},#{redPoint_4},#{redPoint_5},#{redPoint_6},#{redBigSmallPValue},#{redBig},#{redSmall},#{bluePointsPValue},#{bluePoint_1},#{bluePoint_2},#{bluePoint_3},#{bluePoint_4},#{bluePoint_5},#{bluePoint_6},#{blueBigSmallPValue},#{blueBig},#{blueSmall},#{DiceName},#{SourceID},#{RESULTS});
+    </insert>
+
+    <select id="selectAll" resultType="com.north.pojo.ReportForRedBlueSicboDice">
+        select * from reportForRedBlueSicboDice;
+    </select>
+
+</mapper>

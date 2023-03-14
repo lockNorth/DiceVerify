@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.north.mapper.ReportForSicboDiceMapper">
+    <insert id="add">
+        insert into reportForSicboDice (start_date,end_date,pointsPValue,point_1,point_2,point_3,point_4,point_5,point_6,bigSmallPValue,big,small,DiceName,SourceID,RESULTS)
+        values (#{start_date},#{end_date},#{pointsPValue},#{point_1},#{point_2},#{point_3},#{point_4},#{point_5},#{point_6},#{bigSmallPValue},#{big},#{small},#{DiceName},#{SourceID},#{RESULTS});
+    </insert>
+
+    <select id="selectAll" resultType="com.north.pojo.ReportForSicboDice">
+        select * from reportForSicboDice;
+    </select>
+
+</mapper>

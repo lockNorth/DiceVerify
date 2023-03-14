@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.north.mapper.DiceTestResultMapper">
+    <insert id="add">
+        insert into diceTestResult (GameType,TrainingDate,RoundID,Dice1,Dice2,Dice3,DiceName,IsVerify)
+        values (#{GameType},#{TrainingDate},#{RoundID},#{Dice1},#{Dice2},#{Dice3},#{DiceName},0);
+    </insert>
+</mapper>

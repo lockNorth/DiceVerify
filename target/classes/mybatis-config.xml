@@ -3,18 +3,18 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "https://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
-    <environments default="development">
-        <environment id="development">
-            <transactionManager type="JDBC"/>
-            <dataSource type="POOLED">
-                <!--改-->
-                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql:///DiceDataBase?useSSL=false"/>
-                <property name="username" value="root"/>
-                <property name="password" value="Aa0928626173"/>
-            </dataSource>
-        </environment>
-    </environments>
+<!--    <environments default="development">-->
+<!--        <environment id="development">-->
+<!--            <transactionManager type="JDBC"/>-->
+<!--            <dataSource type="POOLED">-->
+<!--                &lt;!&ndash;改&ndash;&gt;-->
+<!--                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>-->
+<!--                <property name="url" value="jdbc:mysql:///DiceDataBase?useSSL=false"/>-->
+<!--                <property name="username" value="root"/>-->
+<!--                <property name="password" value="Aa0928626173"/>-->
+<!--            </dataSource>-->
+<!--        </environment>-->
+<!--    </environments>-->
     <mappers>
 <!--        加載ＳＱＬ映射文件-->
 <!--        <mapper resource="com/north/mapper/DiceTestResultMapper.xml"/>-->

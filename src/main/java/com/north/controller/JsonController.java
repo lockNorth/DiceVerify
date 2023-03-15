@@ -10,6 +10,7 @@ import com.north.mapper.ReportForThaiFishPrawnCrabMapper;
 import com.north.pojo.*;
 import com.north.utils.Utilities;
 import jakarta.annotation.Resource;
+
 import org.springframework.web.bind.annotation.*;
 import org.telegram.telegrambots.meta.api.objects.InputFile;
 
@@ -98,7 +99,6 @@ public class JsonController {
                 List<ReportForRedBlueSicboDice> reportForRedBlueSicboDiceList = reportForRedBlueSicboDiceMapper.selectAll();
                 EasyExcel.write(fileName, ReportForRedBlueSicboDice.class).sheet("report").doWrite(reportForRedBlueSicboDiceList);
                 break;
-
             case "SicboDice":
                 fileName = "/Users/lixiang/Documents/IDEA/IdeaProjects/DiceVerify/src/main/resources/output/ReportForSicboDice.xlsx";
                 List<ReportForSicboDice> reportForSicboDiceList = reportForSicboDiceMapper.selectAll();
